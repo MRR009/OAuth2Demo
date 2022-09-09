@@ -1,7 +1,6 @@
 package com.stg.controller;
 
 
-import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -15,7 +14,7 @@ import com.stg.entity.UserProfile;
 @Controller
 public class RestResource {
 	
-	@RequestMapping(value = "/api/users/me"/* , method = RequestMethod.GET */ )
+	@RequestMapping(value = "/api/users/me" /* , method = RequestMethod.GET */ )
 	public ResponseEntity<UserProfile> profile() {
 		//Build some dummy data to return for testing
 		User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();

@@ -14,8 +14,8 @@ import com.stg.entity.Foo;
 
 import org.apache.commons.lang3.RandomStringUtils;
 
-@RestController
-@RequestMapping(value = "/foos")
+//@RestController
+//@RequestMapping(value = "/foos")
 public class FooController {
 
 //	@GetMapping(value = "/{id}")
